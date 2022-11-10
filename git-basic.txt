@@ -10,3 +10,11 @@ git commit --help   //commit kodlarını gösterir
 git rm(remove) kalsör adı   //siler
 touch klasör adı    //bu adda ve uzantıda dosya oluşturur
 git reset dosya adı     //klasörü untracked yapar
+git log --oneline   //daha okunur bir log yazdırır
+git checkout <commit>   //o commit numarasında neler yapıldığını kontrol eder zamanda yolculuk
+git chackout master     //tekrar şimdiki zamana döner. Üstteki koddan sonra tekrar şimdiye dönmek için bu kodu kullanmak zorundasın
+git restore <dosya adı>     //son yapılmış ve kaydedilmeiş değişiklikleri siler.
+ls  //localde bulunan dosyalrın adını gösterir
+ls -a   //localde bulunan dosyalrın adını ve yolunu gösterir.
+
+//Deneme
