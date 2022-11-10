@@ -1,0 +1,12 @@
+code dosya adı  //dosya açar
+clear   //temizler
+cd klasör adı   //kalsör açar
+git status  //dosya durumunu açıklar
+git log     //yapılan işlemleri yazdırır
+git add dosya adı     //yapılan değişiklikleri kaydeder
+git commit -m"..."  //yorum satırı ekler
+git commit -am"..."     //tüm dosyalara tek bir yorum ekler
+git commit --help   //commit kodlarını gösterir
+git rm(remove) kalsör adı   //siler
+touch klasör adı    //bu adda ve uzantıda dosya oluşturur
+git reset dosya adı     //klasörü untracked yapar
