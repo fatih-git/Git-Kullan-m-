@@ -10,7 +10,6 @@ git commit --help   //commit kodlarını gösterir
 git rm(remove) kalsör adı   //siler
 touch klasör adı    //bu adda ve uzantıda dosya oluşturur
 git reset dosya adı     //klasörü untracked yapar
-git log --oneline   //daha okunur bir log yazdırır
 git checkout <commit>   //o commit numarasında neler yapıldığını kontrol eder zamanda yolculuk
 git chackout master     //tekrar şimdiki zamana döner. Üstteki koddan sonra tekrar şimdiye dönmek için bu kodu kullanmak zorundasın
 git restore <dosya adı>     //son yapılmış ve kaydedilmeiş değişiklikleri siler.
@@ -35,4 +34,8 @@ Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabili
 
 git checkout -b <branch name>   //yeni bir branch oluşturur
 git status -s   //özet status gösterir.
-git log --deorate --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve bağlantıları da gösteriyor arada kullan.
+
+git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve bağlantıları da gösteriyor arada kullan.
+--oneline //tek satır okunabilir
+--graph     //madde madde yıldızlama
+--all   //tüm bilgileri ve bağlantıları gösterme
