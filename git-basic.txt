@@ -33,3 +33,4 @@ ve çalışmalarımı orada yapmak. Daha sonrasında yaptığım çalışmalar t
 yoksa benim branchımdaki çalışmalarım master branch'a aktarılır. Çalışmada değiştirilmesi gereken bir şey olmasa da 
 Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabilir.
 
+git checkout -b <branch name>   //yeni bir branch oluşturur
