@@ -34,3 +34,4 @@ yoksa benim branchımdaki çalışmalarım master branch'a aktarılır. Çalış
 Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabilir.
 
 git checkout -b <branch name>   //yeni bir branch oluşturur
+git status -s   //özet status gösterir.
