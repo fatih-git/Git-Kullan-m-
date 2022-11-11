@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TURGUTLUGİL
 
 
@@ -6,3 +7,11 @@ Fatih TURGUTLUGİL
 
 as
 sa
+=======
+Ben Fatih
+
+Ben Fatih TURGUTLUGİL
+
+
+Selam
+>>>>>>> Denemelerim
