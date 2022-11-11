@@ -6,7 +6,6 @@ git log     //yapılan işlemleri yazdırır
 git add dosya adı     //yapılan değişiklikleri kaydeder
 git commit -m"..."  //git lyorum satırı ekler (yapılan değişiklikleri git add ile kaydetmezsen status yazdırır ve kod çalışmaz)
 git commit -am"..."     //dosyarı ve değişiklikleri kaydeder ve yorum ekler.
-git commit --help   //commit kodlarını gösterir
 git rm(remove) kalsör adı   //siler
 touch klasör adı    //bu adda ve uzantıda dosya oluşturur
 git reset dosya adı     //klasörü untracked yapar
@@ -39,3 +38,4 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 --oneline //tek satır okunabilir
 --graph     //madde madde yıldızlama
 --all   //tüm bilgileri ve bağlantıları gösterme
+--help  //yazılan kodun nasıl çalıştığını ne yaptığını ve nasıl manipüle edileceğini gösteren bir sayfa açar
