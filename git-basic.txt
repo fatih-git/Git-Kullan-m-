@@ -1,3 +1,4 @@
+git init    //Dosyada git kurulumu yapar
 code dosya adı  //dosya açar
 clear   //temizler
 cd klasör adı   //kalsör açar
