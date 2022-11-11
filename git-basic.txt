@@ -42,3 +42,4 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 --help  //yazılan kodun nasıl çalıştığını ne yaptığını ve nasıl manipüle edileceğini gösteren bir sayfa açar
 -f(force)     //yapılmak istenen işlemi yapmaya zorlar.
 -s(short)  //özetler
+-m "..."  //mesaj ekler
