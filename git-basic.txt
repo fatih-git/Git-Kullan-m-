@@ -4,7 +4,7 @@ cd klasör adı   //kalsör açar
 git status  //dosya durumunu açıklar
 git log     //yapılan işlemleri yazdırır
 git add dosya adı     //yapılan değişiklikleri kaydeder
-git commit -m"..."  //yorum satırı ekler
+git commit -m"..."  //yorum satırı ekler (yapılan değişiklikleri git add ile kaydetmezsen status yazdırır ve kod çalışmaz)
 git commit -am"..."     //tüm dosyalara tek bir yorum ekler
 git commit --help   //commit kodlarını gösterir
 git rm(remove) kalsör adı   //siler
@@ -21,3 +21,4 @@ ls -a   //localde bulunan dosyalrın adını ve yolunu gösterir.
 
 git diff(different)    //Lokalde yapılan değişiklikleri git add ile günceleme yapmadan önce gösterir 
 git diff <commit> <commit>  //iki commit arasındaki farklılıkları gösterir
+pwd     //anlık olarak bulunduğun dizini gösterir
