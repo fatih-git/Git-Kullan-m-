@@ -29,7 +29,8 @@ Master branch git dosyalama sisteminde ana dosyaların bulunduğu daldır. Norma
 ortak projelerde çalışılırken benim yapacağım yeni çalışmalar için yeni bir branch oluşturmak
 ve çalışmalarımı orada yapmak. Daha sonrasında yaptığım çalışmalar test edilir ve değiştirilmesi gereken bir şey
 yoksa benim branchımdaki çalışmalarım master branch'a aktarılır. Çalışmada değiştirilmesi gereken bir şey olmasa da 
-Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabilir.
+Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabilir. Üst dalda yapıla değişiklikler alt dallara
+işlemez.
 
 git checkout -b <branch name>   //yeni bir branch oluşturur
 git status -s   //özet status gösterir.
@@ -39,3 +40,5 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 --graph     //madde madde yıldızlama
 --all   //tüm bilgileri ve bağlantıları gösterme
 --help  //yazılan kodun nasıl çalıştığını ne yaptığını ve nasıl manipüle edileceğini gösteren bir sayfa açar
+-f(force)     //yapılmak istenen işlemi yapmaya zorlar.
+-s(short)  //özetler
