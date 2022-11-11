@@ -35,3 +35,4 @@ Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabili
 
 git checkout -b <branch name>   //yeni bir branch oluşturur
 git status -s   //özet status gösterir.
+git log --deorate --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve bağlantıları da gösteriyor arada kullan.
