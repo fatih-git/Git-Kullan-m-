@@ -5,7 +5,7 @@ git status  //dosya durumunu açıklar
 git log     //yapılan işlemleri yazdırır
 git add dosya adı     //yapılan değişiklikleri kaydeder
 git commit -m"..."  //git lyorum satırı ekler (yapılan değişiklikleri git add ile kaydetmezsen status yazdırır ve kod çalışmaz)
-git commit -am"..."     //tüm dosyalara tek bir yorum ekler
+git commit -am"..."     //dosyarı ve değişiklikleri kaydeder ve yorum ekler.
 git commit --help   //commit kodlarını gösterir
 git rm(remove) kalsör adı   //siler
 touch klasör adı    //bu adda ve uzantıda dosya oluşturur
