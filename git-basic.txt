@@ -54,6 +54,7 @@ git config --global alias<kısaltma> "kısaltması yapılmak istenen kod"   //bu
 örneğin; "git config --global alias.<logda> "log --oneline --graph --decorate --all""
 kodu, "git logda" yazdığımda direkt olarak üstteki kodu çalıştırır.
 Örnek olarak ben bunu yaptım.
+git ss->git status -s
 
 --global   //global olarak işlem yapar. bu etiket bilgisayardaki tüm kullanıcılarda çalıştırır hem de tüm repolarda çalışır.
 --system    //bu etiket bilgisayarın her yerinde işlem yapar.
