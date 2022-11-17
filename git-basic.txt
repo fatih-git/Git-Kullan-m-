@@ -49,3 +49,12 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 git branch -d <branch adı>  //branch'ı siler.
 git branch -D <branch adı>  //branch'ı silmeye zorlar.
 git branch <branch adı>    //yeni branch oluşturmanın başka bir yolu
+git config --global alias<kısaltma> "kısaltması yapılmak istenen kod"   //burada devamlı kullandığımız bir kodun kısalmasını oluşturuyoruz yazılım dillerinde fonksiyon oluşturmak gibi.
+
+örneğin; "git config --global alias.<logda> "log --oneline --graph --decorate --all""
+kodu, "git logda" yazdığımda direkt olarak üstteki kodu çalıştırır.
+Örnek olarak ben bunu yaptım.
+
+--global   //global olarak işlem yapar. bu etiket bilgisayardaki tüm kullanıcılarda çalıştırır hem de tüm repolarda çalışır.
+--system    //bu etiket bilgisayarın her yerinde işlem yapar.
+--local     //yazıldığı repositoryde etki eder.
