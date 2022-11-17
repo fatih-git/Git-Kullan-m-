@@ -43,3 +43,9 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 -s(short)  //özetler
 -m "..."  //mesaj ekler
 -am "..."   //değişiklikleri kaydedip mesaj ekler
+
+(master)git merge <branch adı>  //master ve alt dal'ı birleştirir bunu
+*bunu yaptıktan sonra merge edilen branch'da başka yeni şeyler yapılmayacaksa branch'ı sil.
+git branch -d <branch adı>  //branch'ı siler.
+git branch -D <branch adı>  //branch'ı silmeye zorlar.
+ 
