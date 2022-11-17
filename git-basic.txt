@@ -65,3 +65,5 @@ git config --global --list  //oluşturulan aliasları gösterir.
 git config get alias.<fonksiyon>     //ne işe yaradığını gösterir örn git config get alias.ss
 git config --list --global  //globaldaki fonksiyonları gösterir
 git config --unset alias.ss     //fonksiyonu siler.
+less <dosya adı>    //dosya içeriğini yazdırır.
+cd ..   //bir üst klasöre çıkar
