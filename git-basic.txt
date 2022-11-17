@@ -48,5 +48,4 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 *bunu yaptıktan sonra merge edilen branch'da başka yeni şeyler yapılmayacaksa branch'ı sil.
 git branch -d <branch adı>  //branch'ı siler.
 git branch -D <branch adı>  //branch'ı silmeye zorlar.
- git branch <branch adı>    //yeni branch oluşturmanın başka bir yolu
- 
+git branch <branch adı>    //yeni branch oluşturmanın başka bir yolu
