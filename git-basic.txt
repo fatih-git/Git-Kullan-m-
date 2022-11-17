@@ -58,3 +58,5 @@ kodu, "git logda" yazdığımda direkt olarak üstteki kodu çalıştırır.
 --global   //global olarak işlem yapar. bu etiket bilgisayardaki tüm kullanıcılarda çalıştırır hem de tüm repolarda çalışır.
 --system    //bu etiket bilgisayarın her yerinde işlem yapar.
 --local     //yazıldığı repositoryde etki eder.
+
+git config --global --list  //oluşturulan aliasları gösterir.
