@@ -67,3 +67,4 @@ git config --list --global  //globaldaki fonksiyonları gösterir
 git config --unset alias.ss     //fonksiyonu siler.
 less <dosya adı>    //dosya içeriğini yazdırır.
 cd ..   //bir üst klasöre çıkar
+git reset HEAD~     //Commit siler
