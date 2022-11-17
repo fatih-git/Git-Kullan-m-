@@ -60,3 +60,4 @@ kodu, "git logda" yazdığımda direkt olarak üstteki kodu çalıştırır.
 --local     //yazıldığı repositoryde etki eder.
 
 git config --global --list  //oluşturulan aliasları gösterir.
+örn: git config --show-origin alias.logda   //belirtilan aliasın hangi dosyada tutulduğunu gösterir.
