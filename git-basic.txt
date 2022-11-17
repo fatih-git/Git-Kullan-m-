@@ -62,3 +62,6 @@ git ss->git status -s
 
 git config --global --list  //oluşturulan aliasları gösterir.
 örn: git config --show-origin alias.logda   //belirtilan aliasın hangi dosyada tutulduğunu gösterir.
+git config get alias.<fonksiyon>     //ne işe yaradığını gösterir örn git config get alias.ss
+git config --list --global  //globaldaki fonksiyonları gösterir
+git config --unset alias.ss     //fonksiyonu siler.
