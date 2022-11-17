@@ -68,3 +68,4 @@ git config --unset alias.ss     //fonksiyonu siler.
 less <dosya adı>    //dosya içeriğini yazdırır.
 cd ..   //bir üst klasöre çıkar
 git reset HEAD~     //Commit siler (bu tam olarak silmez belli bir süre sonra ulaşılamayan commitler garbage collector ile yok edilir.)
+*her şeyi resetler kaydedilmiş dosyalarıda tekrar add'lemen gerekir.
