@@ -5,7 +5,10 @@ cd klasör adı   //kalsör açar
 git status  //dosya durumunu açıklar
 git log     //yapılan işlemleri yazdırır
 git add dosya adı     //yapılan değişiklikleri kaydeder
+
 git rm(remove) kalsör adı   //siler
+--cached   //cache'de tutulan bilgileri siler.
+
 touch klasör adı    //bu adda ve uzantıda dosya oluşturur
 git reset dosya adı     //klasörü untracked yapar
 git checkout <commit>   //o commit numarasında neler yapıldığını kontrol eder zamanda yolculuk
@@ -67,7 +70,11 @@ git config --list --global  //globaldaki fonksiyonları gösterir
 git config --unset alias.ss     //fonksiyonu siler.
 less <dosya adı>    //dosya içeriğini yazdırır.
 cd ..   //bir üst klasöre çıkar
+
 git reset HEAD~     //Commit siler (bu tam olarak silmez belli bir süre sonra ulaşılamayan commitler garbage collector ile yok edilir.)
+--soft    //kendinde sonraki sadece commit'i siler. dosyayı ve düzenlemeyi silmez bu soft'un etkisi
+--mixed     //cache'den de siler sadece klasördeki dosya kalır.
+--hard  //dosya dahil her şeyi siler.
 *her şeyi resetler kaydedilmiş dosyalarıda tekrar add'lemen gerekir.
 
 git revert  //commit edilen değişikliği geri alır.
