@@ -22,7 +22,7 @@ ls -a   //localde bulunan dosyalrın adını ve yolunu gösterir.
 git diff(different)    //Lokalde yapılan değişiklikleri git add ile günceleme yapmadan önce gösterir 
 git diff <commit> <commit>  //iki commit arasındaki farklılıkları gösterir
 pwd     //anlık olarak bulunduğun dizini gösterir
-gtit branch     //git klasör sisteminde nerede bulunduğumuzu gösterir
+git branch     //git klasör sisteminde nerede bulunduğumuzu gösterir
 
 Not: 
 ----
@@ -86,8 +86,11 @@ mkdir <klasör adı>  //kalsör oluşturma.
 Not:Bir kod sonrasında ekranda gözüken çıktı sonunda : varsa ya da [END] yazıyorsa ve sen bir şeyler yazaıyorsan "Q" tuşuna bas.
 
 git clone   //git klasörünü belirtilen taglere göre ya serverden locale ya da localden server'a kopyalamak için kullanılır.
-git --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
+git clone --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
 git remote add <klon dosyaya verilen isim> <dosya dizini>   //bu kod çalıştığınız repoda değişiklik yaptıktan sonra klon repoya değişiklikleri aktarmak istendiğindeki kurulumunu sağlar. Klon repo'ya bir isim verir ve bulunduğu dizini belirtirsin
 git push -u <remote dosyanın remote koduyla verdiğin adı> <pushlamak istenen branch adı> 'master'   //remote dosya ile master dosya birbirine bağlar ve pushlar
+git push <remote adı>   //bu şekilde yapıldığında sadece ana remote dosyasına pushlar. Remote dosyası başka bir dosyaya klonlandıysa oraya pushlamaz.
+gt push -u <remote kalsör adı> <bağlanmak istenen branch adı (isteniyorsa)[:branch'a konulacak takma ad]>
 git pull    //remote dosyadan veri çeker ve merge eder.
-git fetch   //remote dosyadan veri çeker ama merge etmez.
+git fetch   //remote dosyadan veri çeker ama merge etmez. Gerektiğ zaman kod ile merge edilmeli
+git checkout <remote içindeki ana dosyaya eklenmek istenen remote branchin adı>     //bu şekilde fetch edilmiş olan branch ana dosyada kaydedilir.
