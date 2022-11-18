@@ -72,10 +72,10 @@ less <dosya adı>    //dosya içeriğini yazdırır.
 cd ..   //bir üst klasöre çıkar
 
 git reset HEAD~     //Commit siler (bu tam olarak silmez belli bir süre sonra ulaşılamayan commitler garbage collector ile yok edilir.)
---soft    //kendinde sonraki sadece commit'i siler. dosyayı ve düzenlemeyi silmez bu soft'un etkisi
---mixed     //cache'den de siler sadece klasördeki dosya kalır.
---hard  //dosya dahil her şeyi siler.
 *her şeyi resetler kaydedilmiş dosyalarıda tekrar add'lemen gerekir.
+--soft <commit id>    //kendinde sonraki sadece commit'i siler. dosyayı ve düzenlemeyi silmez bu soft'un etkisi
+--mixed <commit id>     //cache'den de siler sadece klasördeki dosya kalır.
+--hard <commit id>  //dosya dahil her şeyi siler.
 
 git revert  //commit edilen değişikliği geri alır.
 git recovery    //Benzer bir şeyler yapar
