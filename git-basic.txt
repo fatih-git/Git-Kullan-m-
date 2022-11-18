@@ -85,3 +85,5 @@ Not:Bir kod sonrasında ekranda gözüken çıktı sonunda : varsa ya da [END] y
 
 git clone   //git klasörünü belirtilen taglere göre ya serverden locale ya da localden server'a kopyalamak için kullanılır.
 git --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
+
+git remote add <klon dosyaya verilen isim> <dosya dizini>   //bu kod çalıştığınız repoda değişiklik yaptıktan sonra klon repoya değişiklikleri aktarmak istendiğindeki kurulumunu sağlar. Klon repo'ya bir isim verir ve bulunduğu dizini belirtirsin
