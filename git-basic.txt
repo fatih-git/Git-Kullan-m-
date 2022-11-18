@@ -83,3 +83,5 @@ mkdir <klasör adı>  //kalsör oluşturma.
 
 Not:Bir kod sonrasında ekranda gözüken çıktı sonunda : varsa ya da [END] yazıyorsa ve sen bir şeyler yazaıyorsan "Q" tuşuna bas.
 
+git clone   //git klasörünü belirtilen taglere göre ya serverden locale ya da localden server'a kopyalamak için kullanılır.
+git --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
