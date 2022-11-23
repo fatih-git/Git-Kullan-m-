@@ -1,28 +1,31 @@
-git init    //Dosyada git kurulumu yapar
-code dosya adı  //dosya açar
-clear   //temizler
-cd klasör adı   //kalsör açar
-git status  //dosya durumunu açıklar
-git log     //yapılan işlemleri yazdırır
-git add dosya adı     //yapılan değişiklikleri kaydeder
+*Not: "=" amblemi koda yazılmaz dosyada maddeleri açıklamalardan
+birbirinden ayırmak için kullanılmıştır!
 
-git rm(remove) kalsör adı   //siler
+=git init    //Dosyada git kurulumu yapar
+=code dosya adı  //dosya açar
+=clear   //temizler
+=cd klasör adı   //kalsör açar
+=git status  //dosya durumunu açıklar
+=git log     //yapılan işlemleri yazdırır
+=git add dosya adı     //yapılan değişiklikleri kaydeder
+
+=git rm(remove) kalsör adı   //siler
 --cached   //cache'de tutulan bilgileri siler.
 
-touch klasör adı    //bu adda ve uzantıda dosya oluşturur
-git reset dosya adı     //klasörü untracked yapar
-git checkout <commit>   //o commit numarasında neler yapıldığını kontrol eder zamanda yolculuk
-git chackout master     //tekrar şimdiki zamana döner. Üstteki koddan sonra tekrar şimdiye dönmek için bu kodu kullanmak zorundasın
-git restore <dosya adı>     //son yapılmış ve kaydedilmeiş değişiklikleri siler.
-ls  //localde bulunan dosyalrın adını gösterir
-ls -a   //localde bulunan dosyalrın adını ve yolunu gösterir.
+=touch klasör adı    //bu adda ve uzantıda dosya oluşturur
+=git reset dosya adı     //klasörü untracked yapar
+=git checkout <commit>   //o commit numarasında neler yapıldığını kontrol eder zamanda yolculuk
+=git chackout master     //tekrar şimdiki zamana döner. Üstteki koddan sonra tekrar şimdiye dönmek için bu kodu kullanmak zorundasın
+=git restore <dosya adı>     //son yapılmış ve kaydedilmeiş değişiklikleri siler.
+=ls  //localde bulunan dosyalrın adını gösterir
+=ls -a   //localde bulunan dosyalrın adını ve yolunu gösterir.
 
 //Deneme
 
-git diff(different)    //Lokalde yapılan değişiklikleri git add ile günceleme yapmadan önce gösterir 
-git diff <commit> <commit>  //iki commit arasındaki farklılıkları gösterir
-pwd     //anlık olarak bulunduğun dizini gösterir
-git branch     //git klasör sisteminde nerede bulunduğumuzu gösterir
+=git diff(different)    //Lokalde yapılan değişiklikleri git add ile günceleme yapmadan önce gösterir 
+=git diff <commit> <commit>  //iki commit arasındaki farklılıkları gösterir
+=pwd     //anlık olarak bulunduğun dizini gösterir
+=git branch     //git klasör sisteminde nerede bulunduğumuzu gösterir
 
 Not: 
 ----
@@ -34,10 +37,11 @@ yoksa benim branchımdaki çalışmalarım master branch'a aktarılır. Çalış
 Projenin işleyişine ve ilerleyişine göre çalışmalar yan dallarda kalabilir. Üst dalda yapıla değişiklikler alt dallara
 işlemez.
 
-git checkout -b <branch name>   //yeni bir branch oluşturur
-git status -s   //özet status gösterir.
+=git checkout -b <branch name>   //yeni bir branch oluşturur
+=git status -s   //özet status gösterir.
 
-git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve bağlantıları da gösteriyor arada kullan.
+=git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve bağlantıları da gösteriyor arada kullan.
+
 --oneline //tek satır okunabilir
 --graph     //madde madde yıldızlama
 --all   //tüm bilgileri ve bağlantıları gösterme
@@ -49,51 +53,54 @@ git log --graph --oneline --all   //Çok iş yarar oluşturulan branchları ve b
 
 (master)git merge <branch adı>  //master ve alt dal'ı birleştirir bunu
 *bunu yaptıktan sonra merge edilen branch'da başka yeni şeyler yapılmayacaksa branch'ı sil.
-git branch -d <branch adı>  //branch'ı siler.
-git branch -D <branch adı>  //branch'ı silmeye zorlar.
-git branch <branch adı>    //yeni branch oluşturmanın başka bir yolu
-git branch -r   //remote'daki branch'ı gösterir.
-git branch --all    //hem remote hem de ana repodaki branchları gösterir.
-git config --global alias<kısaltma> "kısaltması yapılmak istenen kod"   //burada devamlı kullandığımız bir kodun kısalmasını oluşturuyoruz yazılım dillerinde fonksiyon oluşturmak gibi.
+
+=git branch -d <branch adı>  //branch'ı siler.
+=git branch -D <branch adı>  //branch'ı silmeye zorlar.
+=git branch <branch adı>    //yeni branch oluşturmanın başka bir yolu
+=git branch -r   //remote'daki branch'ı gösterir.
+=git branch --all    //hem remote hem de ana repodaki branchları gösterir.
+=git config --global alias<kısaltma> "kısaltması yapılmak istenen kod"   //burada devamlı kullandığımız bir kodun kısalmasını oluşturuyoruz yazılım dillerinde fonksiyon oluşturmak gibi.
 
 örneğin; "git config --global alias.<logda> "log --oneline --graph --decorate --all""
 kodu, "git logda" yazdığımda direkt olarak üstteki kodu çalıştırır.
 Örnek olarak ben bunu yaptım.
-git ss->git status -s
+
+=git ss->git status -s
 
 --global   //global olarak işlem yapar. bu etiket bilgisayardaki tüm kullanıcılarda çalıştırır hem de tüm repolarda çalışır.
 --system    //bu etiket bilgisayarın her yerinde işlem yapar.
 --local     //yazıldığı repositoryde etki eder.
 
-git config --global --list  //oluşturulan aliasları gösterir.
+=git config --global --list  //oluşturulan aliasları gösterir.
 örn: git config --show-origin alias.logda   //belirtilan aliasın hangi dosyada tutulduğunu gösterir.
-git config get alias.<fonksiyon>     //ne işe yaradığını gösterir örn git config get alias.ss
-git config --list --global  //globaldaki fonksiyonları gösterir
-git config --unset alias.ss     //fonksiyonu siler.
-less <dosya adı>    //dosya içeriğini yazdırır.
-cd ..   //bir üst klasöre çıkar
 
-git reset HEAD~     //Commit siler (bu tam olarak silmez belli bir süre sonra ulaşılamayan commitler garbage collector ile yok edilir.)
+=git config get alias.<fonksiyon>     //ne işe yaradığını gösterir örn git config get alias.ss
+=git config --list --global  //globaldaki fonksiyonları gösterir
+=git config --unset alias.ss     //fonksiyonu siler.
+=less <dosya adı>    //dosya içeriğini yazdırır.
+=cd ..   //bir üst klasöre çıkar
+
+=git reset HEAD~     //Commit siler (bu tam olarak silmez belli bir süre sonra ulaşılamayan commitler garbage collector ile yok edilir.)
 *her şeyi resetler kaydedilmiş dosyalarıda tekrar add'lemen gerekir.
 --soft <commit id>    //kendinde sonraki sadece commit'i siler. dosyayı ve düzenlemeyi silmez bu soft'un etkisi
 --mixed <commit id>     //cache'den de siler sadece klasördeki dosya kalır.
 --hard <commit id>  //dosya dahil her şeyi siler.
 
-git revert  //commit edilen değişikliği geri alır.
-git recovery    //Benzer bir şeyler yapar
-mkdir <klasör adı>  //kalsör oluşturma.
+=git revert  //commit edilen değişikliği geri alır.
+=git recovery    //Benzer bir şeyler yapar
+=mkdir <klasör adı>  //kalsör oluşturma.
 
 Not:Bir kod sonrasında ekranda gözüken çıktı sonunda : varsa ya da [END] yazıyorsa ve sen bir şeyler yazaıyorsan "Q" tuşuna bas.
 
-git clone   //git klasörünü belirtilen taglere göre ya serverden locale ya da localden server'a kopyalamak için kullanılır.
-git clone --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
-git remote add <klon dosyaya verilecek isim> <dosya dizini>   //bu kod çalıştığınız repoda değişiklik yaptıktan sonra klon repoya değişiklikleri aktarmak istendiğindeki kurulumunu sağlar. Klon repo'ya bir isim verir ve bulunduğu dizini belirtirsin
-git push -u <remote dosyanın remote koduyla verdiğin adı> <pushlamak istenen branch adı> 'master'   //remote dosya ile master dosya birbirine bağlar ve pushlar
-git push <remote adı>   //bu şekilde yapıldığında sadece ana remote dosyasına pushlar. Remote dosyası başka bir dosyaya klonlandıysa oraya pushlamaz.
-gt push -u <remote kalsör adı> <bağlanmak istenen branch adı (isteniyorsa)[:branch'a konulacak takma ad]>
-git pull    //remote dosyadan veri çeker ve merge eder.
-git fetch   //remote dosyadan veri çeker ama merge etmez. Gerektiğ zaman kod ile merge edilmeli
-git checkout <remote içindeki ana dosyaya eklenmek istenen remote branchin adı>     //bu şekilde fetch edilmiş olan branch ana dosyada kaydedilir.
+=git clone   //git klasörünü belirtilen taglere göre ya serverden locale ya da localden server'a kopyalamak için kullanılır.
+=git clone --bare .(nokta bulunduğumuz dosya) <bizim repomuzun içindeki bilgilerin kopyalanmasını istediğimiz dosya dizini>    //bizim repomuzun içindeki dosyaları başka bir klasöre kopyalar //--bare oluşturulan klon içindeki dosyalar düzenlenemez demek ancak Başka dosyada düzenlenip içine aktarılabilir kılar.
+=git remote add <klon dosyaya verilecek isim> <dosya dizini>   //bu kod çalıştığınız repoda değişiklik yaptıktan sonra klon repoya değişiklikleri aktarmak istendiğindeki kurulumunu sağlar. Klon repo'ya bir isim verir ve bulunduğu dizini belirtirsin
+=git push -u <remote dosyanın remote koduyla verdiğin adı> <pushlamak istenen branch adı> 'master'   //remote dosya ile master dosya birbirine bağlar ve pushlar
+=git push <remote adı>   //bu şekilde yapıldığında sadece ana remote dosyasına pushlar. Remote dosyası başka bir dosyaya klonlandıysa oraya pushlamaz.
+=gt push -u <remote kalsör adı> <bağlanmak istenen branch adı (isteniyorsa)[:branch'a konulacak takma ad]>
+=git pull    //remote dosyadan veri çeker ve merge eder.
+=git fetch   //remote dosyadan veri çeker ama merge etmez. Gerektiğ zaman kod ile merge edilmeli
+=git checkout <remote içindeki ana dosyaya eklenmek istenen remote branchin adı>     //bu şekilde fetch edilmiş olan branch ana dosyada kaydedilir.
 
 *!Not: Eğer hem master'da hem yan dallarda ayrı ayrı commitler varsa farklı işlemler yapılmışsa merge ile Fast Forward(merge) yapmak tehlikelidir.
 Bu bir çatışma yaratabilir ve dosyalara veya içindeki bilgilere zarar verebilir.
@@ -102,3 +109,8 @@ Bu çatışma iki farklı branch'da aynı dosyayı ve aynı satırı değiştiri
 Conflict düzeltmenin yolu, conflict'den sonra dosyada beliren "<<<<<<< HEAD n\ =======" ve ">>>>>>>(branch adı)" satırlarını silip boşlukları yani satırları silmeden kaydedin.
 Sonra deişiklikleri commitleyin. Hallolmuş olacaktır. Garanti olsun diye tekrar merge codunu yazabilirsiniz.
 Bu çözüm pratik ve güzeldir ancak dosayda istenmeyen sonuçlar çıkarabilir çünkü ilkeldir. Dosyalar önemliyse ve sorun çıksın istemiyorsanız dosyaları daha dikkatli düzenlemelisiniz.
+
+=git rebase <branch adı>     //Merge gibi çalışır dalları birleştirir. Merge'den farklı olarak dosyaları dallara kopyalar ve içindeki bilgileri de tıpkı merge gibi halleder.
+                             //Ancak commitleri birleştirmez yani yan dal ile master dal'ın commitleri birleşmez aynı log'a ya da commit'e gelmez bu sayede loglar daha okunur olur ve
+                             //loglar arasında çatallanma olmaz. Bu noktadan sonra yan dalı ister sil ister bırak. Rebase ile bu işler daha iyi olur.
+                             //Avantajı birden fazla kişinin çalıştığı bir projede çalışanların açtığı yan dalların ve master dalın karışması engellenmiş olur ve kafa karışmaz.
