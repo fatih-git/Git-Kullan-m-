@@ -94,3 +94,6 @@ gt push -u <remote kalsör adı> <bağlanmak istenen branch adı (isteniyorsa)[:
 git pull    //remote dosyadan veri çeker ve merge eder.
 git fetch   //remote dosyadan veri çeker ama merge etmez. Gerektiğ zaman kod ile merge edilmeli
 git checkout <remote içindeki ana dosyaya eklenmek istenen remote branchin adı>     //bu şekilde fetch edilmiş olan branch ana dosyada kaydedilir.
+
+*!Not: Eğer hem master'da hem yan dallarda ayrı ayrı commitler varsa farklı işlemler yapılmışsa merge ile Fast Forward(merge) yapmak tehlikelidir.
+Bu bir çatışma yaratabilir ve dosyalara veya içindeki bilgilere zarar verebilir.
