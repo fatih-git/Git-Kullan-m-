@@ -114,3 +114,6 @@ Bu çözüm pratik ve güzeldir ancak dosayda istenmeyen sonuçlar çıkarabilir
                              //Ancak commitleri birleştirmez yani yan dal ile master dal'ın commitleri birleşmez aynı log'a ya da commit'e gelmez bu sayede loglar daha okunur olur ve
                              //loglar arasında çatallanma olmaz. Bu noktadan sonra yan dalı ister sil ister bırak. Rebase ile bu işler daha iyi olur.
                              //Avantajı birden fazla kişinin çalıştığı bir projede çalışanların açtığı yan dalların ve master dalın karışması engellenmiş olur ve kafa karışmaz.
+--continue  //Conflict oluştuğunda rebase bir yere kadar gelir ve duru. Çakışmaları düzelttikten sonra git rebase --continue ile işlem devam eder ve tamamlanır.
+--abort     //Conflict durumunda rebase işlemini tamamen iptal eder.
+--skip       //Conflict durumunda rebase edilmeye çalışılan ve hata veren commiti atlar ve kaldığı yerden devam eder.
