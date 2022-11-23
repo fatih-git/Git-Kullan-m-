@@ -97,3 +97,8 @@ git checkout <remote içindeki ana dosyaya eklenmek istenen remote branchin adı
 
 *!Not: Eğer hem master'da hem yan dallarda ayrı ayrı commitler varsa farklı işlemler yapılmışsa merge ile Fast Forward(merge) yapmak tehlikelidir.
 Bu bir çatışma yaratabilir ve dosyalara veya içindeki bilgilere zarar verebilir.
+Zaten git seni uyarackatır (CONFLICT uyarısı) bu noktada hangi daldaki değişiklikleri esas olduğunu belirtmeni isteyecektir.
+Bu çatışma iki farklı branch'da aynı dosyayı ve aynı satırı değiştirip merge etmeye çalıştığında olur.
+Conflict düzeltmenin yolu, conflict'den sonra dosyada beliren "<<<<<<< HEAD n\ =======" ve ">>>>>>>(branch adı)" satırlarını silip boşlukları yani satırları silmeden kaydedin.
+Sonra deişiklikleri commitleyin. Hallolmuş olacaktır. Garanti olsun diye tekrar merge codunu yazabilirsiniz.
+Bu çözüm pratik ve güzeldir ancak dosayda istenmeyen sonuçlar çıkarabilir çünkü ilkeldir. Dosyalar önemliyse ve sorun çıksın istemiyorsanız dosyaları daha dikkatli düzenlemelisiniz.
